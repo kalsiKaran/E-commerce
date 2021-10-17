@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './routingComponents/home/home.component';
-import { WorkersComponent } from './routingComponents/workers/workers.component';
+import { CartComponent } from './components/cart/cart.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-    { path:'', redirectTo:'/home', pathMatch:'full'},
-    { path: 'home', component: HomeComponent },
-    { path: 'workers', component: WorkersComponent }
+  {path:'home', component:HomeComponent},
+  {path:'cart', component:CartComponent}
 ];
 
 @NgModule({
@@ -14,4 +13,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingModules = [HomeComponent, WorkersComponent]
+export const routingComponents = [HomeComponent,
+                                  CartComponent]
