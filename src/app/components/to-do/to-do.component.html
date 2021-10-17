@@ -1,0 +1,23 @@
+<form class="w-100 d-flex align-items-center" (submit)="addTodo()">
+  <input
+    type="text"
+    placeholder="Enter todo item..."
+    class="form-control mx-auto my-3 w-75"
+    [(ngModel)]="inputTodo"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <input class="btn btn-danger mx-auto" type="submit" value="Add" />
+</form>
+<div class="todo-container">
+  <div
+    class="todo-list {{ todos.complete ? 'done' : '' }}"
+    *ngFor="let todos of todo; let i = index"
+    (click)="toggleDone(i)"
+  >
+    <div>{{ i + 1 }}</div>
+    <h6 class="flex-grow-1 ml-3">{{ todos.content }}</h6>
+    <button class="btn btn-outline-danger btn-sm" (click)="removeEl(i)">
+      Remove
+    </button>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+* {
+  margin: 0;
+}
+
+a {
+  color: black;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  background: #e0e0e0;
+  border-radius: 8px;
+  padding: 0.6rem 0.8rem;
+  transition: all 0.3s;
+  &.active,
+  &:hover {
+    color: rgb(48, 120, 255);
+    text-decoration: none;
+    background: #d4d4d4;
+  }
+}
