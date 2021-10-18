@@ -1,36 +1,37 @@
+@import "~bootstrap/scss/bootstrap";
 nav {
-  height: 8vh;
-  min-height: 8vh;
-  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 10rem;
+  width: 15vw;
   margin: 0;
   padding: 0 1rem;
   box-shadow: 0 2px 8px #0000001f;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  background: $gray-800;
   ul {
     padding: 0;
     margin: 0;
     height: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     list-style-type: none;
 
     li {
       display: flex;
       align-items: center;
-      height: 100%;
       font-size: 1.2rem;
       cursor: pointer;
       margin-right: 1rem;
-      border-bottom: 4px solid transparent;
+      margin-bottom: 3rem;
       transition: all 0.3s;
       font-weight: 500;
 
       &:hover,
       &.active {
-        color: rgb(19, 76, 245);
-        border-bottom: 4px solid rgb(19, 76, 245);
+        color: $primary;
       }
     }
   }
@@ -40,6 +41,12 @@ nav {
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
     color: #0063e4;
-    margin-right: 5rem;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
   }
+}
+.cart {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
 }

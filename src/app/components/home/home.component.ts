@@ -9,7 +9,7 @@ import { EcomDataService } from 'src/app/ecom-data.service';
 export class HomeComponent implements OnInit {
 
   usingData:any = [];
-
+  pushToCart:any = []
   constructor(private _dataService: EcomDataService) { }
 
   ngOnInit(): void {
@@ -20,4 +20,5 @@ export class HomeComponent implements OnInit {
     
   }
 }
+
 

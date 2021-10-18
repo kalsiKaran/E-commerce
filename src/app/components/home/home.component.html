@@ -1,1 +1,25 @@
-<div class="container"></div>
+<div class="container">
+  <div class="grid__container">
+    <div class="grid__list" *ngFor="let data of usingData">
+      <div class="card__container">
+        <div class="card__img--container">
+          <img src="{{ data.image }}" class="card__img--img" />
+          <div class="card__img--icons">
+            <div class="card__img--icons--fav">
+              <i class="fas fa-heart"></i>
+            </div>
+            <div class="card__img--icons--cart">
+              <i class="fas fa-cart-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="card__container--data">
+          <div class="item__data--name">
+            {{ data.title }}
+          </div>
+          <div class="item__data--price">${{ data.price }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
