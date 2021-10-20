@@ -8,10 +8,6 @@ $fa-font-path: "~font-awesome/fonts";
 * {
   margin: 0;
 }
-body {
-  background: $gray-900;
-  color: $white;
-}
 
 a {
   color: black;
@@ -38,4 +34,20 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  padding: 0 1rem;
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(192, 192, 192);
+  border-radius: 8px;
 }

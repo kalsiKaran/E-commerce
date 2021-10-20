@@ -14,9 +14,13 @@
           </div>
         </div>
         <div class="card__container--data">
-          <div class="item__data--name">
+          <h6 class="item__data--name">
             {{ data.title }}
-          </div>
+            <br />
+            <span class="text-muted font-weight-normal">{{
+              data.category
+            }}</span>
+          </h6>
           <div class="item__data--price">${{ data.price }}</div>
         </div>
       </div>

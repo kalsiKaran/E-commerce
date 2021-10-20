@@ -13,7 +13,8 @@ export class HomeComponent implements OnInit {
   constructor(private _dataService: EcomDataService) { }
 
   ngOnInit(): void {
-  this._dataService.getData().subscribe(response => {
+  this._dataService.getData().
+    subscribe(response => {
     this.usingData = response;
     console.log(this.usingData);
     });
